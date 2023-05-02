@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
       // this.meaning = this.Definition[0].meanings[0].definitions[0].definition;
       // this.partOfSpeech = this.Definition[0].meanings[0].partOfSpeech;
       
-      // console.log("Definition:", this.Definition[0].meanings[0].definitions[0].definition);
+    
       // console.log("Definition:", this.Definition[0].meanings[0].partOfSpeech);
     });
 
