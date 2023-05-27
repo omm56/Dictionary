@@ -1,0 +1,29 @@
+<!-- Dictionary-app -->
+<h1>Dictionary API</h1>
+
+<div class="container1">
+  <input type="text" [(ngModel)] = "word" placeholder="search... here..!" class="textbox1"> &nbsp;&nbsp;
+  <button (click) = "searchForWord()" class="findmeaning"> Search </button>
+</div>
+
+<div class="container2">
+<div class="container3">
+<li *ngFor = "let define of Definition" style="list-style:square;">
+  <h1>{{word}}</h1>
+  <ol *ngFor = "let m of define.meanings" style="list-style:circle;">
+    <p>part Of Speech: {{m.partOfSpeech}}</p>
+    <ol *ngFor ="let d of m.definitions">
+      <p>Meaning : {{d.definition}}</p>
+
+    </ol>
+  </ol>
+  <!-- <p class = "meaning"> Meaning: {{meaning}}</p> -->
+
+  </li>
+</div>
+
+
+
+</div>
+
+<router-outlet></router-outlet>
